@@ -1,0 +1,8 @@
+utf-nuku
+Copyright 2026 adam erik
+
+This product includes software developed by adam erik
+(utf-nuku: a UTF-8 / UTF-16 / UTF-32 encoder and decoder that shows every step).
+
+Parts of the code (the GUI module) were written with help from
+Claude (Anthropic), used as a pair-programming assistant.

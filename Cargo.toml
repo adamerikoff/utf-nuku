@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/utf-nuku-core", "crates/utf-nuku-cli", "crates/utf-nuku-gui"]
+resolver = "3"

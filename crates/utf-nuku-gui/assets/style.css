@@ -1,0 +1,231 @@
+/* utf-nuku GUI, light theme. Header bits = orange, data bits = blue. */
+
+:root {
+    --background: #f5f6f8;
+    --panel: #ffffff;
+    --border: #d5d9e0;
+    --text: #1f2328;
+    --muted: #6b7280;
+    --header-color: #c2410c;
+    --data-color: #1d4ed8;
+    --selected: #e8eeff;
+    --error: #b91c1c;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: -apple-system, system-ui, sans-serif;
+}
+
+.app {
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* ---------- controls ---------- */
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-input {
+    font-size: 16px;
+    padding: 6px 10px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.options {
+    display: flex;
+    gap: 8px;
+}
+
+select,
+button {
+    font-size: 13px;
+    padding: 4px 10px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--selected);
+}
+
+button.active {
+    border-color: var(--data-color);
+    background: var(--selected);
+}
+
+/* ---------- result ---------- */
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-text {
+    font-size: 16px;
+}
+
+.error {
+    color: var(--error);
+}
+
+.hint {
+    color: var(--muted);
+}
+
+/* ---------- byte row ---------- */
+
+.byte-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.char-group {
+    padding: 6px;
+    background: var(--panel);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.char-group.selected {
+    border-color: var(--data-color);
+    background: var(--selected);
+}
+
+.char-label {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.char-bytes {
+    display: flex;
+    gap: 6px;
+}
+
+.byte {
+    text-align: center;
+    font-family: ui-monospace, Menlo, monospace;
+}
+
+.byte-hex {
+    font-size: 13px;
+}
+
+.byte-bits {
+    font-size: 10px;
+    color: var(--muted);
+}
+
+/* ---------- steps ---------- */
+
+.char-steps {
+    padding: 10px 14px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.char-steps h2 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+}
+
+.step {
+    display: flex;
+    gap: 12px;
+    padding: 2px 0;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 13px;
+}
+
+.step-label {
+    width: 120px;
+    color: var(--muted);
+}
+
+.header-bits {
+    color: var(--header-color);
+    font-weight: bold;
+}
+
+.data-bits {
+    color: var(--data-color);
+}
+
+.hex {
+    color: var(--muted);
+}
+
+/* ---------- all bytes ---------- */
+
+.section-title {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.all-bytes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.all-bytes-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.all-bytes-text {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.9;
+    padding: 6px 10px;
+    min-height: 36px;
+    user-select: text;
+    background: var(--panel);
+    color: var(--data-color);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+/* one char's bytes inside the all-bytes box */
+.char-bytes-text {
+    padding: 1px 3px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.char-bytes-text:hover {
+    border-color: var(--border);
+}
+
+.char-bytes-text.selected {
+    background: var(--selected);
+    border-color: var(--data-color);
+}

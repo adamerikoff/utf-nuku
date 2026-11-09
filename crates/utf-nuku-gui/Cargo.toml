@@ -1,0 +1,13 @@
+[package]
+name = "utf-nuku-gui"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Desktop viewer (Dioxus) for utf-nuku: see how each char is encoded, bit by bit"
+repository = "https://github.com/adamerikoff/utf-nuku"
+# not published to crates.io: it depends on a Dioxus alpha and is an app, not a library
+publish = false
+
+[dependencies]
+utf-nuku-core = { path = "../utf-nuku-core" }
+dioxus = { version = "=0.8.0-alpha.3", features = ["desktop"] }
