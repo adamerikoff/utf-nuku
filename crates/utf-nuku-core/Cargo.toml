@@ -1,10 +1,10 @@
 [package]
 name = "utf-nuku-core"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "Apache-2.0"
 description = "UTF-8 / UTF-16 / UTF-32 encoder and decoder written from scratch, with a step-by-step trace of every char"
-repository = "https://github.com/adamerikoff/utf-nuku"
+repository = "https://gitlab.com/adamerikoff/utf-nuku"
 readme = "../../README.md"
 keywords = ["utf8", "utf16", "unicode", "encoding", "education"]
 categories = ["encoding", "text-processing"]

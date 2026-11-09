@@ -166,15 +166,15 @@ cargo run -p utf-nuku-gui
 
 Encoding `Hé😀` in UTF-8, with `é` selected:
 
-![Encode Hé😀 in UTF-8](https://raw.githubusercontent.com/adamerikoff/utf-nuku/main/docs/screenshots/encode_utf8.svg?sanitize=true)
+![Encode Hé😀 in UTF-8](https://gitlab.com/adamerikoff/utf-nuku/-/raw/main/docs/screenshots/encode_utf8.svg)
 
 `😀` in UTF-16, with its surrogate pair steps:
 
-![😀 in UTF-16](https://raw.githubusercontent.com/adamerikoff/utf-nuku/main/docs/screenshots/encode_utf16_pair.svg?sanitize=true)
+![😀 in UTF-16](https://gitlab.com/adamerikoff/utf-nuku/-/raw/main/docs/screenshots/encode_utf16_pair.svg)
 
 Decoding bytes typed as hex, with `😀` selected:
 
-![Decode hex](https://raw.githubusercontent.com/adamerikoff/utf-nuku/main/docs/screenshots/decode_hex.svg?sanitize=true)
+![Decode hex](https://gitlab.com/adamerikoff/utf-nuku/-/raw/main/docs/screenshots/decode_hex.svg)
 
 ## License
 

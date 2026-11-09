@@ -1,17 +1,17 @@
 [package]
 name = "utf-nuku"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "Apache-2.0"
 description = "CLI that encodes and decodes UTF-8 / UTF-16 / UTF-32 through Unix pipes and shows every step bit by bit"
-repository = "https://github.com/adamerikoff/utf-nuku"
+repository = "https://gitlab.com/adamerikoff/utf-nuku"
 readme = "../../README.md"
 keywords = ["utf8", "utf16", "unicode", "encoding", "cli"]
 categories = ["command-line-utilities", "encoding"]
 
 [dependencies]
 clap = { version = "4.6.7", features = ["derive"] }
-utf-nuku-core = { path = "../utf-nuku-core", version = "0.1.0" }
+utf-nuku-core = { path = "../utf-nuku-core", version = "0.1.1" }
 
 [[bin]]
 name = "utf-nuku"

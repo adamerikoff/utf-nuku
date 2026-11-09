@@ -4499,7 +4499,7 @@ dependencies = [
 
 [[package]]
 name = "utf-nuku"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "clap",
  "utf-nuku-core",
@@ -4507,7 +4507,7 @@ dependencies = [
 
 [[package]]
 name = "utf-nuku-core"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "utf-nuku-gui"
